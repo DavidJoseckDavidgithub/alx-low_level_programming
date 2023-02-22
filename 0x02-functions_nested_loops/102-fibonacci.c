@@ -1,22 +1,23 @@
 #include <stdio.h>
 /**
- * main - entry point
- * Description: calculate and prints even  number < 4,000,000
- * Return: 0 is success
+ * main - print first 50 fibonacci nos
+ * Return: 0 suceess
  */
 int main(void)
 {
-	int a = 0, b = 1, next = 0;
-	int sum = 0;
+	int counter;
+	unsigned long fibonaci1 = 0, fibonaci2 = 1, sum;
 
-	while (next < 4000000)
+	for (counter = 0; counter <= 49; counter++)
 	{
-		next = a + b;
-		a = b;
-		b = next;
-		if (next % 2 == 0)
-			sum += next;
+		sum = fibonaci1 + fibonaci2;
+		printf("%lu", sum);
+		fibonaci1 = fibonaci2;
+		fibonaci2  = sum;
+		if (counter == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
-	printf("%i\n", sum);
 	return (0);
 }
