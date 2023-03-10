@@ -12,14 +12,14 @@ Steps to follow:
         4. Create main.h file....inside include all the prototypes
         5. Create _putchar.c file
         6. Include a main.c file
-        7. Using vi create all the 20 .c files with their respective code
+        7. Using vi create all the 20 .c files with their respective functional code
 s
         8. Using gcc -c *.c covert all .c files to static objects.
-        9. Using ar rcs libmy.a to create the libmy.a file library
+        9. Using ar rcs libmy.a to create the libmy.a library
         10. Do the ar rcs libmy.a *.c to move every .o files to your library
         11. Run ar -t libmy.a to list all your .o files
         12. Run nm libmy.a to display everything as given in the task
-        13. Git add -all
+        13. Git add -all or git add .
         14. Git commit -m 'message'
         15. Git push
 
@@ -27,7 +27,7 @@ s
 Task.
 1. Create a script called create_static_lib.sh that creates a static library called liball.a from all the .c files that are in the current directory.
 What to do:
-         vi create_static_lib.sh while on 0x09-static_libraries directory and on your alx-low_level_programming
+         1. vi create_static_lib.sh while on 0x09-static_libraries directory and on your alx-low_level_programming
          2. While in vi write the necessary script
          3. Convert your ./create_static_lib.sh file to executable mode using chmod u+x (file)
          4. Run ./create_static_lib.sh to test your executable file.
