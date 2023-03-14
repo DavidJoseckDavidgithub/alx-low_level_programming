@@ -44,5 +44,5 @@
    * If your function fails, it should return NULL
 
 
-[^*Created by J.O.D sfteng*]
+`Created by J.O.D sfteng`
 -----------------------------------------------------------------------------
