@@ -22,6 +22,7 @@ return (NULL);
 
 new->n = n;
 new->next = NULL;
+temp = *head;
 if (*head == NULL)
 {
 *head = new;
