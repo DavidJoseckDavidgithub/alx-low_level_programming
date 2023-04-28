@@ -1,1 +1,0 @@
-More singly linked list.
