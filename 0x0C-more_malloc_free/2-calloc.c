@@ -10,24 +10,24 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-  void *memory;
+void *memory;
 
-  char *buffer;
+char *buffer;
 
-  unsigned int i;
+unsigned int i;
 
-  if (nmemb == 0 || size == 0)
-    return (NULL);
+if (nmemb == 0 || size == 0)
+return (NULL);
 
-  memory = malloc(nmemb * size);
+memory = malloc(nmemb * size);
 
-  if (memory == NULL)
-    return (NULL);
+if (memory == NULL)
+return (NULL);
 
-  buffer = memory;
+buffer = memory;
 
-  for (i = 0; i < (nmemb * size); i++)
-    buffer[i] = '\0';
+for (i = 0; i < (nmemb * size); i++)
+buffer[i] = '\0';
 
-  return (memory);
+return (memory);
 }
