@@ -2,7 +2,6 @@
 /**
  * _puts_recursion - print a string
  * @s:string
- * *s:pointer to astring
  * Return:void
  */
 void _puts_recursion(char *s)
@@ -14,6 +13,9 @@ if (*s == '\0')
 	return;
 }
 // recursive case: print the first line and call the function on the rest of the string
+else
+{
 _putchar(*s);
 _puts_recursion(s + 1);
+}
 }
