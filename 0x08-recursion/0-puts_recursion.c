@@ -6,16 +6,13 @@
  */
 void _puts_recursion(char *s)
 {
-// base case: if the string is empty, print a new line and return
-if (*s == '\0')
-{
-	_putchar('\n');
-	return;
-}
-// recursive case: print the first line and call the function on the rest of the string
-else
-{
-_putchar(*s);
-_puts_recursion(s + 1);
-}
+	// base case: if the string is empty, print a new line and return
+	if (*s == '\0')
+	{
+		putchar('\n');
+		return;
+	}
+	// recursion case: ;print the first character and call the function on the rest of the string
+	putchar('\n');
+	_puts_recursion(s + 1);
 }
